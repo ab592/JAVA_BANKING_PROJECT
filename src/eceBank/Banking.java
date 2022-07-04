@@ -21,14 +21,14 @@ public class Banking {
 				String conurl="jdbc:oracle:thin:@localhost:1521/xe";// predefined
 				  con=DriverManager.getConnection(conurl,uid,pwd);
 				stmt=con.createStatement();
-				System.out.println("\n\n***** Banking Management System*****\n\n");
+				System.out.println("\n\n***** Welcome To Our Bank *****\n\n");
 				BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 				do
 				{
-				System.out.println("1: insert a customer's details");
-	            System.out.println("2: show account details of a customer");
-	            System.out.println("3: Deposit Money to an Account");
-				System.out.println("4: Withdraw Money from an Account");
+				System.out.println("1: Enter Your Details");
+	            System.out.println("2: Your Account Details");
+	            System.out.println("3: Deposit Money ");
+				System.out.println("4: Withdraw Money ");
 				System.out.println("5: EXIT\n");
 				System.out.println("enter your choice");
 				ch=Integer.parseInt(br.readLine());
